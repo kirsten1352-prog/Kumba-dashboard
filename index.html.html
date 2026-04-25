@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FortyEight Strategic Services | Mining Security Consulting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --navy: #0b2a4a; /* Based on FortyEight logo colors */
+            --accent-blue: #1e5c8a;
+            --light-blue: #4da6ff;
+            --white: #ffffff;
+            --bg-light: #f4f6f8;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: var(--navy);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo-container { display: flex; align-items: center; text-decoration: none; }
+        
+        /* LOGO LINK SETUP */
+        .logo { 
+            height: 50px; 
+            width: auto; 
+            margin-right: 15px; 
+            border-radius: 4px;
+        }
+
+        .logo-container h1 { color: var(--white); font-size: 1.5rem; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+
+        .nav-links a {
+            color: var(--white);
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--light-blue); }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(rgba(11, 42, 74, 0.75), rgba(11, 42, 74, 0.75)),
+            url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop'); 
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 { font-size: 3rem; margin-bottom: 20px; }
+        .hero p { max-width: 800px; margin: auto; font-size: 1.25rem; opacity: 0.9; }
+
+        /* SECTIONS */
+        section { padding: 80px 10%; max-width: 1200px; margin: auto; }
+        .section-title { text-align: center; color: var(--navy); margin-bottom: 50px; font-size: 2.2rem; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--accent-blue); margin: 15px auto; }
+
+        /* ABOUT SECTION */
+        .about-flex { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+        .about-text { flex: 1; min-width: 300px; }
+        .about-img { flex: 1; min-width: 300px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        /* SERVICES GRID */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-top: 6px solid var(--accent-blue);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card i { font-size: 3rem; color: var(--accent-blue); margin-bottom: 20px; }
+
+        /* CONTACT */
+        .contact-banner {
+            background: var(--navy);
+            color: var(--white);
+            padding: 60px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        footer { background: #081c33; color: var(--white); text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="logo-container">
+        <img src="https://i.postimg.cc/0jwMYDsk/logo.png" alt="FortyEight Logo" class="logo">
+        <h1>FortyEight</h1>
+    </a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h2>Strategic Security Intelligence</h2>
+    <p>We design intelligent, ethical, and compliant security strategies for high-risk mining operations.</p>
+</header>
+
+<section id="about">
+    <h2 class="section-title">Corporate Profile</h2>
+    <div class="about-flex">
+        <div class="about-text">
+            <p>FortyEight Strategic Services (Pty) Ltd is a specialized consulting firm. We integrate surveillance technology, data analysis, and operational planning to deliver sustainable security solutions.</p>
+            <p>Our mandate is built on <strong>strict ethical standards</strong>. We strictly avoid politically influenced security activities and prioritize human rights and data protection laws.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop" class="about-img" alt="Strategic Planning">
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Capabilities</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-user-secret"></i>
+            <h3>Illegal Mining Prevention</h3>
+            <p>Proactive detection and management of unauthorized mining through advanced intelligence systems.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Infrastructure Protection</h3>
+            <p>Securing critical mining assets against theft, sabotage, and operational disruptions.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-file-contract"></i>
+            <h3>Compliance & ESG</h3>
+            <p>Aligning security strategies with global sustainability and ethical governance standards.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-banner">
+        <h2>Partner With FortyEight</h2>
+        <p>Email: info@fortyeight.co.za | Pretoria, South Africa</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 FortyEight Strategic Services. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
